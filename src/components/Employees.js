@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function Employees() {
   return (
-    <div className="flex flex-col lg:flex-row lg:min-h-screen items-center justify-between p-10 bg-[#F3F4F5]">
+    <div className="flex flex-col max-w-full   xl:flex-row xl:h-[803px] md:h-[1165px] h-[1239px]  items-center justify-between p-10 bg-[#F3F4F5]">
       {/* Container for Text */}
-      <div className="lg:w-1/2 md:w-full  lg:pl-32 ">
+      <div className="xl:w-1/2 md:w-full  xl:pl-32 ">
         <div className="max-w-md text-left md:self-start md:ml-0">
           <hr className="w-36 border-black mb-4" />
-          <h2 className="text-3xl font-bold text-black leading-tight lg:text-[40px] lg:font-inter lg:font-semibold lg:leading-[48px] lg:tracking-[-0.02em]">
+          <h2 className="text-3xl font-bold text-black leading-tight xl:text-[40px] xl:font-inter xl:font-semibold xl:leading-[48px] xl:tracking-[-0.02em]">
             Together let's build a successful
             <br /> product
           </h2>
-          <p className="text-gray-600 mt-4 lg:font-medium lg:font-montserrat lg:text-base">
+          <p className="text-gray-600 mt-4 xl:font-medium xl:font-montserrat xl:text-base">
             Our freelance platform helps connect experienced designers,
             developers, graphics illustrators, and tech professionals with
             talented teams that work together effortlessly.
@@ -26,7 +26,7 @@ export default function Employees() {
       {/* Container for  desktop and tablet Image */}
 
       {/* Container for desktop and tablet Image */}
-      <div className="lg:w-[950px] lg:pr-32 mt-6 lg:mt-0 hidden sm:hidden md:block lg:block">
+      <div className="xl:w-[950px] xl:pr-32  xl:mt-0 hidden sm:hidden md:block lg:block">
         <Image
           src="/employeesbg.svg"
           alt="Desktop Banner"
@@ -37,7 +37,7 @@ export default function Employees() {
       </div>
 
       {/* Container for mobile image */}
-      <div className="mt-6 block sm:block md:hidden lg:hidden">
+      <div className="mt-6 block sm:block md:hidden xl:hidden">
         <Image
           src="/employeesbgm.svg"
           alt="Mobile Banner"
