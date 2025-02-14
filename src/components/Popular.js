@@ -31,7 +31,7 @@ export default function Layout() {
                   alt={item.text}
                   width={24}
                   height={24}
-                  className="object-contain rounded-full bg-white md:w-[40px] md:h-[40px] xl:w-[35px] xl:h-[35px]"
+                  className="object-contain rounded-full md:w-[40px] md:h-[40px] xl:w-[35px] xl:h-[35px]"
                 />
               </span>
               <span className="text-sm font-montserrat xl:text-base font-bold sm:text-base whitespace-nowrap">
