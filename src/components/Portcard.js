@@ -111,7 +111,7 @@ export default function Portcard() {
           height={34.08}
           className="md:hidden xl:block hidden"
         />
-        <Image src="/sponsorstag9.png" alt="Lonk" width={57} height={28.81} className="hidden" />
+        <Image src="/sponsorstag9.png" alt="Lonk" width={57} height={28.81} className="hidden xl:block" />
       </div>
     </div>
   );
