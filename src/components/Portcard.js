@@ -14,7 +14,7 @@ export default function Portcard() {
     <div className="bg-[#222124] ">
       <div className="w-full p-8 h-[1213.12px]  xl:h-[550px] md:h-[420px] justify-center items-center xl:flex py-10">
         {/* Section Title */}
-        <div className="md:mx-14 xl:w-[1200px] ">
+        <div className="md:mx-9 xl:w-[1200px] ">
           <div className=" xl:ml-0 md:ml-0">
             <h1 className="text-xl leading-[28px] font-inter font-medium text-[#CBCBCB] tracking-[-0.02em]">
               Website & Applications Design
