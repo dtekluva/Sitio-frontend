@@ -2,7 +2,9 @@ import Image from "next/image";
 
 export default function Layout() {
   return (
-    <div className="xl:h-[675px] xl:w-[1200px] py-10 p-4 px-4  md:[834px] mx-auto xl:mx-36 max-w-full md:mx-14 xl:p-0 md:p-0">
+    <main className=" h-[1220px] p-8 xl:h-[810px] md:h-[808px] flex flex-col  xl:flex justify-center items-center">
+        
+    <div className="xl:h-[675px] xl:w-[1200px] py-10 md:[834px] max-w-full md:mx-14 xl:p-0 md:p-0">
       {/* Popular Customer Demand Section */}
       <div className="text-gray-900 mt-10 xl:mt-20 ">
         <h2 className="xl:text-2xl text-base md:text-xl font-semibold pl-1 font-inter leading-[32px] tracking-[-0.02em]">
@@ -13,7 +15,7 @@ export default function Layout() {
         </p>
 
         {/* Categories */}
-        <div className="flex flex-wrap md:grid-cols-2 xl:flex xl:flex-nowrap items-center mt-8 gap-4 xl:gap-9  md:gap-5">
+        <div className="flex flex-wrap md:grid-cols-2 xl:flex xl:flex-nowrap  mt-8 gap-4 xl:gap-9  md:gap-5">
           {[
             { text: "Business Growth", color: "bg-purple-300", icon: "/proicon1.png" },
             { text: "Graphics", color: "bg-orange-200", icon: "/proicon5.png", height:"20" },
@@ -23,7 +25,7 @@ export default function Layout() {
           ].map((item, index) => (
             <span
               key={index}
-              className={`${item.color} text-black px-4 py-2 xl:w-[241px] xl:h-[84px] md:py-2 md:px-5 rounded-full w-fit md:w-fit flex items-center`}
+              className={`${item.color} text-black xl:px-4 px-2 py-2 xl:w-[241px] xl:h-[84px] md:py-2 md:px-5 rounded-full w-fit md:w-fit flex items-center`}
             >
               <span className="p-2 rounded-full flex-shrink-0 -ml-2 xl:-ml-5">
                 <Image
@@ -72,5 +74,6 @@ export default function Layout() {
         </div>
       </div>
     </div>
+    </main>
   );
 }

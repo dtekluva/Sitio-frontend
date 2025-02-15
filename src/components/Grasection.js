@@ -3,6 +3,8 @@ import Image from "next/image";
 
 export default function Grasection() {
   return (
+    <main className=" h-[990px] xl:h-[1220px] md:h-[894px] sm:overflow-hidden xl:flex justify-center items-center">
+   
     
     <div className="max-w-full mx-auto w-[718px]  h-[898px] p-4 px-5 xl:w-[1200px] xl:h-[1054px] xl:p-0 xl:px-0 md:p-0 md:mt-8 md:w-[718px] md:h-[830px] xl:mx-36">
   {/* Section Title */}
@@ -49,5 +51,6 @@ export default function Grasection() {
         drives growth and success."
       </p>
     </div>
+    </main>
   );
 }

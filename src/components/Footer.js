@@ -30,21 +30,21 @@ export default function Footer() {
               alt="OG"
               width={50}
               height={50}
-              className="xl:w-[100px] xl:h-[100px]"
+              className="xl:w-[50px] xl:h-[50px]"
             />
             <Image
               src="/freelan1.svg"
               alt="Magenta"
               width={50}
               height={50}
-              className="xl:w-[100px] xl:h-[100px] md:w-[100px] md:h-[100px]"
+              className="xl:w-[70px] xl:h-[70px] md:w-[100px] md:h-[100px]"
             />
             <Image
               src="/freelan3.svg"
               alt="Imperum"
               width={50}
               height={50}
-              className="xl:w-[100px] xl:h-[100px] md:w-[100px] md:h-[100px]"
+              className="xl:w-[70px] xl:h-[70px] md:w-[100px] md:h-[100px]"
             />
             <Image
               src="/freelan5.svg"
