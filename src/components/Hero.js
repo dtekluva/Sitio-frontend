@@ -17,13 +17,16 @@ export default function Hero() {
 
   return (
     <>
-      <main className="w-full bg-[#232222] p-4 px-4 h-[700px] xl:h-[810px] md:h-[644px] sm:overflow-hidden xl:flex justify-center items-center">
+      <main
+        id="hero"
+        className="w-full bg-[#232222] p-4 px-4 h-[700px] xl:h-[810px] md:h-[644px] sm:overflow-hidden xl:flex justify-center items-center"
+      >
         <div className="bg-[#121212] w-full xl:max-w-[1200px] h-[412px] xl:h-[737.08px] mx-auto md:max-w-[730px] md:h-[602px]">
           <div
             className="absolute inset-0 bg-no-repeat bg-contain"
             style={{
               backgroundImage: "url('/s.svg')",
-              backgroundSize: "35%", // Default for desktop
+              backgroundSize: "33%", // Default for desktop
               backgroundPosition: "100px 0px", // Default for desktop
               mixBlendMode: "lighten",
             }}
@@ -53,7 +56,7 @@ export default function Hero() {
             {/* Navbar */}
             <nav className="flex max-w-full  xl:w-fit justify-between  md:bg-[#121212]  bg-[#232222]  xl:px-0 items-center md:justify-between  md:py-0 xl:space-x-96 xl:py-0">
               {/* Logo */}
-              <Link href="/">
+            
                 <Image
                   src="/Logo.png"
                   alt="Logo"
@@ -61,7 +64,7 @@ export default function Hero() {
                   height={250} // Base height
                   className="h-auto w-[280px] sm:w-[205px] md:w-[290px]  xl:w-[400px]  object-contain xl:top-0"
                 />
-              </Link>
+            
 
               {/* Mobile Menu Toggle (Hamburger) */}
               {/* Mobile Menu Toggle (Hamburger) - Only Visible on Small Screens */}
@@ -91,12 +94,18 @@ export default function Hero() {
   md:flex md:flex-row md:static md:bg-transparent md:py-0 md:w-auto md:gap-10
   xl:flex xl:flex-row xl:relative  xl:w-auto xl:items-center xl:top-0 xl:mr-7`}
               >
-                <li className=" font-inter font-medium text-base">HOME</li>
-                <li className=" font-inter font-medium text-base">ABOUT</li>
-                <li className=" font-inter font-medium whitespace-nowrap text-base">
-                  OUR SERVICE
+                <li className="font-inter font-medium text-base cursor-pointer">
+                  <a href="#hero">HOME</a>
                 </li>
-                <li className=" font-inter font-medium text-base">CLIENTS</li>
+                <li className=" font-inter font-medium text-base">
+                  <a href="#about">ABOUT</a>
+                </li>
+                <li className=" font-inter font-medium whitespace-nowrap text-base">
+                  <a href="#services">OUR SERVICE</a>
+                </li>
+                <li className=" font-inter font-medium text-base">
+                  <a href="#employees">CLIENTS</a>
+                  </li>
               </ul>
             </nav>
 
@@ -174,7 +183,7 @@ export default function Hero() {
                     alt="Image 4"
                     width={120}
                     height={90}
-                    className="object-cover w-[170px] h-[115px] sm:h-full md:w-[200px] xl:h-[245px]  xl:w-[518px]"
+                    className="object-cover w-[190px] h-[115px] sm:h-full md:w-[200px] xl:h-[245px]  xl:w-[518px]"
                   />
                   <Image
                     src="/heroimg5.jpg"

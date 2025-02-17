@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Employees() {
   return (
-    <div className="flex flex-col max-w-full   xl:flex-row xl:h-[803px] md:h-[1165px] h-[1239px]  items-center justify-between p-10 bg-[#F3F4F5]">
+    <div id="employees" className="flex flex-col max-w-full   xl:flex-row xl:h-[803px] md:h-[1165px] h-[1239px]  items-center justify-between p-10 bg-[#F3F4F5]">
       {/* Container for Text */}
       <div className="xl:w-1/2 md:w-full  xl:pl-32 ">
         <div className="max-w-md text-left md:self-start md:ml-0">

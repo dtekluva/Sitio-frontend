@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Gotyou() {
   return (
-    <main className=" p-4 px-4 h-[710px]  xl:h-[650px] md:h-[444px]  sm:overflow-hidden xl:flex justify-center items-center">
+    <main id="services" className=" p-4 px-4 h-[710px]  xl:h-[650px] md:h-[444px]  sm:overflow-hidden xl:flex justify-center items-center">
    
     <div className="xl:w-[1200px]  xl:h-[507px] md:h-[408px] md:w-[718px]justify-center md:mt-10  xl:mt-20 py-10 px-4 p-4 xl:p-0 md:p-0   xl:mx-36 max-w-full md:mx-14">
       {/*  flex items-start xl:min-h-screen xl:items-center mx-auto justify-center xl:max-w-7xl xl:mx-32 max-w-full md:mx-9 */}

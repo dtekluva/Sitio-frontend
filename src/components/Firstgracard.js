@@ -3,7 +3,7 @@ import Image from "next/image"; // ✅ Import Image from Next.js
 
 export default function Firstgracard() {
   return (
-    <main className="bg-[#FFFFFF]  h-[1100px]  xl:h-[1600px] md:h-[874px] sm:overflow-hidden flex justify-center items-center">
+    <main  className="bg-[#FFFFFF]  h-[1100px]  xl:h-[1600px] md:h-[874px] sm:overflow-hidden flex justify-center items-center">
    
     <div className=" py-10  xl:w-[1200px] xl:h-[1600px] md:w-[718px] md:h-[874px] md:p-0  p-4 xl:mt-24 xl:mx-36 xl:p-0 max-w-full md:mx-14">
       <p className="text-xl font-medium text-[#5A5C60] font-inter leading-[28px] tracking-[-0.02em]">

@@ -59,11 +59,11 @@ export default function Footer() {
       </div>
 
       {/* Footer Section */}
-      <footer className="bg-black text-white max-w-full mt-12 flex flex-col lg:mt-64 items-center relative py-10">
+      <footer className="bg-black text-white max-w-full mt-12 flex flex-col xl:mt-64 items-center relative py-10">
         {/* CTA Banner inside Footer */}
         <div className="absolute -top-11 xl:-top-20 md:-top-16 md:py-9  bg-gradient-to-r from-[#FC00FF] to-[#02ACAE] text-white py-3 xl:py-10 px-6 rounded-lg w-[90%] xl:max-w-[1200px] flex flex-col xl:flex-row md:flex-row  items-center justify-between">
           <div>
-            <h3 className="lg:text-2xl text-sm md:text-base md:font-inter md:font-semibold font-bold lg:leading-8 tracking-[-0.02em]">
+            <h3 className="xl:text-2xl text-sm md:text-base md:font-inter md:font-semibold font-bold lg:leading-8 tracking-[-0.02em]">
               Good, Smart & Reliable Digital Solutions for Business Growth
             </h3>
             <div className="xl:text-sm leading-11 font-normal gap-1 font-roboto text-xs mt-2 lg:opacity-80 xl:space-x-4 flex flex-wrap items-center">
@@ -98,7 +98,7 @@ export default function Footer() {
           />
         </div>
 
-        <div className="lg:mx-40 w-full flex flex-col xl:mt-3600 mt-10 md:mt-20 ">
+        <div className=" w-full flex flex-row justify-center  mt-10 md:mt-20 ">
           <div className="mx-5 md:mx-10 ">
             {/* Brand Section */}
             <div className="flex items-center justify-between w-full mb-6">
