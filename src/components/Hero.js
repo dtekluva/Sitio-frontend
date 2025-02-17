@@ -19,9 +19,9 @@ export default function Hero() {
     <>
       <main
         id="hero"
-        className="w-full bg-[#232222] p-4 px-4 h-[700px] xl:h-[810px] md:h-[644px] sm:overflow-hidden xl:flex justify-center items-center"
+        className="w-full bg-[#232222] p-4 px-4 h-[700px] xl:h-[810px] md:h-[644px] sm:overflow-hidden  justify-center items-center"
       >
-        <div className="bg-[#121212] w-full xl:max-w-[1200px] h-[412px] xl:h-[737.08px] mx-auto md:max-w-[730px] md:h-[602px]">
+        <div className="bg-[#121212] w-full xl:max-w-[1200px] xl:mt-6 h-[412px] xl:h-[737px] mx-auto md:max-w-[730px] md:h-[602px]">
           <div
             className="absolute inset-0 bg-no-repeat bg-contain"
             style={{

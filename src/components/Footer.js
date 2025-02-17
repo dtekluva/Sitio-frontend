@@ -5,7 +5,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 export default function Footer() {
   return (
-    <div className="bg-white xl:h-[1250px] md:h-[1197] h-[990px]">
+    <div className="bg-white xl:h-[1250px] md:max-h-[1197] h-[990px]">
       {/* Trusted Brands Section */}
       <div className="xl:mx-32">
         <div className="text-center py-12">

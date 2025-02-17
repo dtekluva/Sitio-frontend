@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 export default function Page() {
   return (
     <>
-      <main className="max-w-[100%]  h-[100%] bg-white">
+      <main className=" bg-white">
         {/* Shared container for consistent margin */}
           <Hero />
           <Popular />
