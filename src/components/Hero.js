@@ -19,9 +19,9 @@ export default function Hero() {
     <>
       <main
         id="hero"
-        className="w-full bg-[#232222] p-4 px-4 h-[700px] xl:h-[810px] md:h-[644px] sm:overflow-hidden  justify-center items-center"
+        className="w-full bg-[#232222] p-4 px-4 h-[700px] xl:h-[750px] md:h-[644px] sm:overflow-hidden  justify-center items-center"
       >
-        <div className="bg-[#121212] w-full xl:max-w-[1200px] xl:mt-24 h-[412px] xl:h-[737px] mx-auto md:max-w-[730px] md:h-[602px]">
+        <div className="bg-[#121212] w-full xl:max-w-[1200px] xl:mt-10 h-[412px] xl:h-[737px] mx-auto md:max-w-[730px] md:h-[602px]">
           <div
             className="absolute inset-0 bg-no-repeat bg-contain"
             style={{
@@ -56,15 +56,14 @@ export default function Hero() {
             {/* Navbar */}
             <nav className="flex max-w-full  xl:w-fit justify-between  md:bg-[#121212]  bg-[#232222]  xl:px-0 items-center md:justify-between  md:py-0 xl:space-x-96 xl:py-0">
               {/* Logo */}
-            
-                <Image
-                  src="/Logo.png"
-                  alt="Logo"
-                  width={220} // Base width
-                  height={250} // Base height
-                  className="h-auto w-[280px] sm:w-[205px] md:w-[290px]  xl:w-[400px]  object-contain xl:top-0"
-                />
-            
+
+              <Image
+                src="/Logo.png"
+                alt="Logo"
+                width={220} // Base width
+                height={250} // Base height
+                className="h-auto w-[280px] sm:w-[205px] md:w-[290px]  xl:w-[400px]  object-contain xl:top-0"
+              />
 
               {/* Mobile Menu Toggle (Hamburger) */}
               {/* Mobile Menu Toggle (Hamburger) - Only Visible on Small Screens */}
@@ -105,7 +104,7 @@ export default function Hero() {
                 </li>
                 <li className=" font-inter font-medium text-base">
                   <a href="#employees">CLIENTS</a>
-                  </li>
+                </li>
               </ul>
             </nav>
 
@@ -179,11 +178,12 @@ export default function Hero() {
                 {/* Image Section */}
                 <div className="flex flex-row flex-nowrap xl:pl-3 mt-0 items-center justify-end gap-3 md:mt-0  md:justify-start">
                   <Image
-                    src="/heroimg4.jpg"
+                    src="/reheroimg4.jpg"
                     alt="Image 4"
-                    width={120}
-                    height={90}
-                    className="object-cover w-[190px] h-[115px] sm:h-full md:w-[200px] xl:h-[245px]  xl:w-[518px]"
+                    width={518}  // Match the max display width
+                    height={245} // Match the max display height
+                    className="object-cover w-[190px] h-[115px] sm:h-full md:w-[200px] xl:h-[245px] xl:w-[518px]"
+                   
                   />
                   <Image
                     src="/heroimg5.jpg"
