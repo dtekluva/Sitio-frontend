@@ -25,7 +25,7 @@ export default function Hero() {
       >
         <div className="bg-[#121212] w-full xl:max-w-[1200px] xl:mt-10 h-[412px] xl:h-[737px] mx-auto md:max-w-[730px] md:h-[602px]">
           <div
-            className="absolute inset-0 bg-no-repeat bg-contain xl:bg-[length:30%] xl:bg-[100px_30px]"
+            className="absolute inset-0 bg-no-repeat bg-contain xl:bg-[length:30%] xl:bg-[100px_30px] z-0"
             style={{
               backgroundImage: "url('/s.svg')",
               mixBlendMode: "lighten",
@@ -56,20 +56,17 @@ export default function Hero() {
             {/* Navbar */}
             <nav className="flex max-w-full  xl:w-fit justify-between  md:bg-[#121212]  bg-[#232222]  xl:px-0 items-center md:justify-between  md:py-0 xl:space-x-96 xl:py-0">
               {/* Logo */}
-              <div className="Logo">
-      <button
-        onClick={() => window.location.reload()} 
-        className="cursor-pointer"
-      >
-        <Image
-          src="/Logo.png"
-          alt="Logo"
-          width={220}
-          height={250}
-          className="h-auto w-[280px] sm:w-[205px] md:w-[290px] xl:w-[400px] object-contain"
-        />
-      </button>
-    </div>
+              <div className="Logo relative z-10">
+                <a href="/">
+                  <Image
+                    src="/Logo.png"
+                    alt="Logo"
+                    width={220}
+                    height={250}
+                    className="h-auto w-[280px] sm:w-[205px] md:w-[290px] xl:w-[400px] object-contain cursor-pointer"
+                  />
+                </a>
+              </div>
 
               {/* Mobile Menu Toggle (Hamburger) - Only Visible on Small Screens */}
               <div className="relative md:hidden xl:hidden text-white">
