@@ -4,8 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+  const router = useRouter();
   const [mobile, setMobile] = useState(false);
   // State to track background position
   const [position, setPosition] = useState(15); // Initial position is 15%
@@ -54,16 +56,21 @@ export default function Hero() {
             {/* Navbar */}
             <nav className="flex max-w-full  xl:w-fit justify-between  md:bg-[#121212]  bg-[#232222]  xl:px-0 items-center md:justify-between  md:py-0 xl:space-x-96 xl:py-0">
               {/* Logo */}
+              <div className="Logo">
+      <button
+        onClick={() => window.location.reload()} 
+        className="cursor-pointer"
+      >
+        <Image
+          src="/Logo.png"
+          alt="Logo"
+          width={220}
+          height={250}
+          className="h-auto w-[280px] sm:w-[205px] md:w-[290px] xl:w-[400px] object-contain"
+        />
+      </button>
+    </div>
 
-              <Image
-                src="/Logo.png"
-                alt="Logo"
-                width={220} // Base width
-                height={250} // Base height
-                className="h-auto w-[280px] sm:w-[205px] md:w-[290px] xl:w-[400px] object-contain cursor-pointer"
-              />
-
-              {/* Mobile Menu Toggle (Hamburger) */}
               {/* Mobile Menu Toggle (Hamburger) - Only Visible on Small Screens */}
               <div className="relative md:hidden xl:hidden text-white">
                 {" "}
@@ -91,7 +98,7 @@ export default function Hero() {
   md:flex md:flex-row md:static md:bg-transparent md:py-0 md:w-auto md:gap-10
   xl:flex xl:flex-row xl:relative  xl:w-auto xl:items-center xl:top-0 xl:mr-7`}
               >
-                <li className="font-inter font-medium text-base cursor-pointer">
+                <li className="font-inter font-medium text-base ">
                   <a href="#hero">HOME</a>
                 </li>
                 <li className=" font-inter font-medium text-base">
