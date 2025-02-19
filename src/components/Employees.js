@@ -28,7 +28,7 @@ export default function Employees() {
       {/* Container for desktop and tablet Image */}
       <div className="xl:w-[950px] xl:pr-32  xl:mt-0 hidden sm:hidden md:block lg:block">
         <Image
-          src="/employeesbg.svg"
+          src="/clientsbg.jpg"
           alt="Desktop Banner"
           width={1600} // Increased for higher resolution
           height={600}
@@ -39,7 +39,7 @@ export default function Employees() {
       {/* Container for mobile image */}
       <div className="mt-6 block sm:block md:hidden xl:hidden">
         <Image
-          src="/employeesbgm.svg"
+          src="/clientmobbb.svg"
           alt="Mobile Banner"
           width={1600} // Increased for higher resolution
           height={600}

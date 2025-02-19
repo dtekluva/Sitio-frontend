@@ -23,11 +23,9 @@ export default function Hero() {
       >
         <div className="bg-[#121212] w-full xl:max-w-[1200px] xl:mt-10 h-[412px] xl:h-[737px] mx-auto md:max-w-[730px] md:h-[602px]">
           <div
-            className="absolute inset-0 bg-no-repeat bg-contain"
+            className="absolute inset-0 bg-no-repeat bg-contain xl:bg-[length:30%] xl:bg-[100px_30px]"
             style={{
               backgroundImage: "url('/s.svg')",
-              backgroundSize: "33%", // Default for desktop
-              backgroundPosition: "100px 30px", // Default for desktop
               mixBlendMode: "lighten",
             }}
           >
@@ -62,7 +60,7 @@ export default function Hero() {
                 alt="Logo"
                 width={220} // Base width
                 height={250} // Base height
-                className="h-auto w-[280px] sm:w-[205px] md:w-[290px]  xl:w-[400px]  object-contain xl:top-0"
+                className="h-auto w-[280px] sm:w-[205px] md:w-[290px] xl:w-[400px] object-contain cursor-pointer"
               />
 
               {/* Mobile Menu Toggle (Hamburger) */}
@@ -180,10 +178,9 @@ export default function Hero() {
                   <Image
                     src="/reheroimg4.jpg"
                     alt="Image 4"
-                    width={518}  // Match the max display width
+                    width={518} // Match the max display width
                     height={245} // Match the max display height
                     className="object-cover w-[190px] h-[115px] sm:h-full md:w-[200px] xl:h-[245px] xl:w-[518px]"
-                   
                   />
                   <Image
                     src="/heroimg5.jpg"
