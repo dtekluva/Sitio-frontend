@@ -54,20 +54,21 @@ export default function Hero() {
           {/* Navbar, First Content, and Second Content all in the same div */}
           <div className="flex flex-col gap-12">
             {/* Navbar */}
-            <nav className="flex max-w-full  xl:w-fit justify-between  md:bg-[#121212]  bg-[#232222]  xl:px-0 items-center md:justify-between  md:py-0 xl:space-x-96 xl:py-0">
+            <nav className="flex max-w-full  xl:w-fit justify-between xl:space-x-[650px]   md:bg-[#121212]  bg-[#232222]  xl:px-0 items-center md:justify-between  md:py-0  xl:py-0">
               {/* Logo */}
               <div className="Logo relative z-10">
                 <a href="/">
                   <Image
-                    src="/Logo.png"
+                    src="/newlogo.svg"
                     alt="Logo"
-                    width={220}
-                    height={250}
-                    className="h-auto w-[280px] sm:w-[205px] md:w-[290px] xl:w-[400px] object-contain cursor-pointer"
+                    width={20}
+                    height={20}
+                    className="h-auto w-[90px]  md:w-[100px] xl:w-[130px] object-contain cursor-pointer"
                   />
                 </a>
               </div>
 
+              
               {/* Mobile Menu Toggle (Hamburger) - Only Visible on Small Screens */}
               <div className="relative md:hidden xl:hidden text-white">
                 {" "}
